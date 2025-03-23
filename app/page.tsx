@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight,
   Code,
@@ -17,11 +17,11 @@ import {
   Shield,
   Clock,
   Lightbulb,
-} from "lucide-react"
-import { ProjectCard } from "@/components/project-card"
-import { TestimonialCard } from "@/components/testimonial-card"
-import { ContactForm } from "@/components/contact-form"
-import { AnimatedCounter } from "@/components/animated-counter"
+} from "lucide-react";
+import { ProjectCard } from "@/components/project-card";
+import { TestimonialCard } from "@/components/testimonial-card";
+import { ContactForm } from "@/components/contact-form";
+import { AnimatedCounter } from "@/components/animated-counter";
 
 export default function Home() {
   return (
@@ -33,24 +33,42 @@ export default function Home() {
             <div className="rounded-2xl bg-blue-500 p-2">
               <Code className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-white">TechNova</span>
+            <span className="text-xl font-bold text-white">JJM Solutions</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="#services" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">
+            <Link
+              href="#services"
+              className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors"
+            >
               Services
             </Link>
-            <Link href="#work" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">
+            <Link
+              href="#work"
+              className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors"
+            >
               Work
             </Link>
-            <Link href="#about" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">
+            <Link
+              href="#about"
+              className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors"
+            >
               About
             </Link>
-            <Link href="#contact" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">
+            <Link
+              href="#contact"
+              className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors"
+            >
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:inline-flex bg-blue-500 hover:bg-blue-600 rounded-xl">Get Started</Button>
-          <Button variant="outline" size="icon" className="md:hidden rounded-xl border-dark-100">
+          <Button className="hidden md:inline-flex bg-blue-500 hover:bg-blue-600 rounded-xl">
+            Get Started
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="md:hidden rounded-xl border-dark-100"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -84,11 +102,12 @@ export default function Home() {
                   <span>Digital Innovation Agency</span>
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                  We Build <span className="text-blue-400">Digital</span> Experiences
+                  We Build <span className="text-blue-400">Digital</span>{" "}
+                  Experiences
                 </h1>
                 <p className="text-lg text-gray-400 max-w-md">
-                  Award-winning agency specializing in mobile and web app development that drives business growth and
-                  user engagement.
+                  Award-winning agency specializing in mobile and web app
+                  development that drives business growth and user engagement.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
@@ -122,9 +141,14 @@ export default function Home() {
                   <div className="absolute -bottom-6 -left-6 rounded-2xl bg-blue-500 p-4 shadow-lg">
                     <div className="flex items-center gap-2">
                       <div className="rounded-full bg-white p-1">
-                        <Star className="h-4 w-4 text-blue-500" fill="currentColor" />
+                        <Star
+                          className="h-4 w-4 text-blue-500"
+                          fill="currentColor"
+                        />
                       </div>
-                      <span className="text-sm font-medium text-white">100+ Successful Projects</span>
+                      <span className="text-sm font-medium text-white">
+                        100+ Successful Projects
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -137,9 +161,12 @@ export default function Home() {
         <section id="services" className="py-20 bg-dark-300">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-white">Our Services</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-white">
+                Our Services
+              </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                We offer end-to-end solutions for businesses looking to transform their digital presence.
+                We offer end-to-end solutions for businesses looking to
+                transform their digital presence.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -149,13 +176,21 @@ export default function Home() {
                   <div className="rounded-xl bg-blue-500/20 p-3 w-14 h-14 flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
                     <Smartphone className="h-7 w-7 text-blue-400" />
                   </div>
-                  <h3 className="text-xl font-bold mb-1 text-white">Captivating Mobile Experiences</h3>
-                  <p className="text-blue-400 text-sm mb-3">Boost engagement with intuitive, high-performance apps</p>
-                  <p className="text-gray-400 mb-4">
-                    We craft native and cross-platform mobile applications that delight users and drive measurable
-                    business results through seamless UX and cutting-edge technology.
+                  <h3 className="text-xl font-bold mb-1 text-white">
+                    Captivating Mobile Experiences
+                  </h3>
+                  <p className="text-blue-400 text-sm mb-3">
+                    Boost engagement with intuitive, high-performance apps
                   </p>
-                  <Link href="#" className="group inline-flex items-center text-blue-400 font-medium">
+                  <p className="text-gray-400 mb-4">
+                    We craft native and cross-platform mobile applications that
+                    delight users and drive measurable business results through
+                    seamless UX and cutting-edge technology.
+                  </p>
+                  <Link
+                    href="#"
+                    className="group inline-flex items-center text-blue-400 font-medium"
+                  >
                     Learn more
                     <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -167,13 +202,21 @@ export default function Home() {
                   <div className="rounded-xl bg-purple-500/20 p-3 w-14 h-14 flex items-center justify-center mb-4 group-hover:bg-purple-500/30 transition-colors">
                     <Globe className="h-7 w-7 text-purple-400" />
                   </div>
-                  <h3 className="text-xl font-bold mb-1 text-white">Scalable Web Solutions</h3>
-                  <p className="text-purple-400 text-sm mb-3">Transform ideas into powerful digital platforms</p>
-                  <p className="text-gray-400 mb-4">
-                    Our web applications combine stunning design with robust architecture, ensuring your digital
-                    presence scales with your business while delivering exceptional user experiences.
+                  <h3 className="text-xl font-bold mb-1 text-white">
+                    Scalable Web Solutions
+                  </h3>
+                  <p className="text-purple-400 text-sm mb-3">
+                    Transform ideas into powerful digital platforms
                   </p>
-                  <Link href="#" className="group inline-flex items-center text-purple-400 font-medium">
+                  <p className="text-gray-400 mb-4">
+                    Our web applications combine stunning design with robust
+                    architecture, ensuring your digital presence scales with
+                    your business while delivering exceptional user experiences.
+                  </p>
+                  <Link
+                    href="#"
+                    className="group inline-flex items-center text-purple-400 font-medium"
+                  >
                     Learn more
                     <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -185,13 +228,22 @@ export default function Home() {
                   <div className="rounded-xl bg-green-500/20 p-3 w-14 h-14 flex items-center justify-center mb-4 group-hover:bg-green-500/30 transition-colors">
                     <Users className="h-7 w-7 text-green-400" />
                   </div>
-                  <h3 className="text-xl font-bold mb-1 text-white">Human-Centered Design</h3>
-                  <p className="text-green-400 text-sm mb-3">Create experiences users love to interact with</p>
-                  <p className="text-gray-400 mb-4">
-                    Our UX/UI design process puts users first, creating intuitive interfaces that balance aesthetic
-                    appeal with functional simplicity to increase conversion and retention rates.
+                  <h3 className="text-xl font-bold mb-1 text-white">
+                    Human-Centered Design
+                  </h3>
+                  <p className="text-green-400 text-sm mb-3">
+                    Create experiences users love to interact with
                   </p>
-                  <Link href="#" className="group inline-flex items-center text-green-400 font-medium">
+                  <p className="text-gray-400 mb-4">
+                    Our UX/UI design process puts users first, creating
+                    intuitive interfaces that balance aesthetic appeal with
+                    functional simplicity to increase conversion and retention
+                    rates.
+                  </p>
+                  <Link
+                    href="#"
+                    className="group inline-flex items-center text-green-400 font-medium"
+                  >
                     Learn more
                     <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
@@ -209,9 +261,12 @@ export default function Home() {
                 <Rocket className="h-4 w-4" />
                 <span>Our Projects</span>
               </div>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Work</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                Our Work
+              </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                Explore our portfolio of successful projects that have helped businesses grow.
+                Explore our portfolio of successful projects that have helped
+                businesses grow.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -281,8 +336,12 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark-300/90 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 w-full p-6 text-center">
-                      <h3 className="text-xl font-bold text-white mb-2">Meet Our Team</h3>
-                      <p className="text-gray-300">A diverse group of passionate tech enthusiasts</p>
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        Meet Our Team
+                      </h3>
+                      <p className="text-gray-300">
+                        A diverse group of passionate tech enthusiasts
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -293,28 +352,37 @@ export default function Home() {
                   <Zap className="h-4 w-4" />
                   <span>About Us</span>
                 </div>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-white">About TechNova</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-white">
+                  About JJM Solutions
+                </h2>
                 <p className="text-gray-400">
-                  Founded in 2015, TechNova has evolved from a small team of passionate developers into a full-service
-                  digital powerhouse. Our journey has been defined by continuous innovation, client success, and
-                  technical excellence.
+                  Founded in 2015, JJM Solutions has evolved from a small team
+                  of passionate developers into a full-service digital
+                  powerhouse. Our journey has been defined by continuous
+                  innovation, client success, and technical excellence.
                 </p>
                 <p className="text-gray-400">
-                  Today, our team of 50+ experts across design, development, and strategy work together to create
-                  digital products that not only look great but deliver measurable business results.
+                  Today, our team of 50+ experts across design, development, and
+                  strategy work together to create digital products that not
+                  only look great but deliver measurable business results.
                 </p>
 
                 <div className="bg-dark-100 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-white mb-4">Why Choose TechNova</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">
+                    Why Choose JJM Solutions
+                  </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <div className="rounded-full bg-blue-500/20 p-1 mt-0.5">
                         <Shield className="h-4 w-4 text-blue-400" />
                       </div>
                       <div>
-                        <span className="text-white font-medium">Proven Expertise</span>
+                        <span className="text-white font-medium">
+                          Proven Expertise
+                        </span>
                         <p className="text-gray-400 text-sm">
-                          With 100+ successful projects, we bring deep technical knowledge to every challenge.
+                          With 100+ successful projects, we bring deep technical
+                          knowledge to every challenge.
                         </p>
                       </div>
                     </li>
@@ -323,9 +391,12 @@ export default function Home() {
                         <Clock className="h-4 w-4 text-blue-400" />
                       </div>
                       <div>
-                        <span className="text-white font-medium">Agile Methodology</span>
+                        <span className="text-white font-medium">
+                          Agile Methodology
+                        </span>
                         <p className="text-gray-400 text-sm">
-                          Our iterative approach ensures rapid development without sacrificing quality.
+                          Our iterative approach ensures rapid development
+                          without sacrificing quality.
                         </p>
                       </div>
                     </li>
@@ -334,9 +405,12 @@ export default function Home() {
                         <Lightbulb className="h-4 w-4 text-blue-400" />
                       </div>
                       <div>
-                        <span className="text-white font-medium">Innovation Focus</span>
+                        <span className="text-white font-medium">
+                          Innovation Focus
+                        </span>
                         <p className="text-gray-400 text-sm">
-                          We stay ahead of trends to build future-proof solutions for our clients.
+                          We stay ahead of trends to build future-proof
+                          solutions for our clients.
                         </p>
                       </div>
                     </li>
@@ -346,13 +420,15 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4 pt-4">
                   <div className="bg-dark-100 p-4 rounded-2xl group hover:bg-dark-100/80 transition-all hover:-translate-y-1 duration-300">
                     <div className="text-3xl font-bold text-blue-400 flex items-center">
-                      <AnimatedCounter value={100} duration={2000} /> <span>+</span>
+                      <AnimatedCounter value={100} duration={2000} />{" "}
+                      <span>+</span>
                     </div>
                     <div className="text-gray-400">Projects Completed</div>
                   </div>
                   <div className="bg-dark-100 p-4 rounded-2xl group hover:bg-dark-100/80 transition-all hover:-translate-y-1 duration-300">
                     <div className="text-3xl font-bold text-blue-400 flex items-center">
-                      <AnimatedCounter value={50} duration={2000} /> <span>+</span>
+                      <AnimatedCounter value={50} duration={2000} />{" "}
+                      <span>+</span>
                     </div>
                     <div className="text-gray-400">Team Members</div>
                   </div>
@@ -364,7 +440,8 @@ export default function Home() {
                   </div>
                   <div className="bg-dark-100 p-4 rounded-2xl group hover:bg-dark-100/80 transition-all hover:-translate-y-1 duration-300">
                     <div className="text-3xl font-bold text-blue-400 flex items-center">
-                      <AnimatedCounter value={98} duration={2000} /> <span>%</span>
+                      <AnimatedCounter value={98} duration={2000} />{" "}
+                      <span>%</span>
                     </div>
                     <div className="text-gray-400">Client Satisfaction</div>
                   </div>
@@ -382,26 +459,29 @@ export default function Home() {
                 <Star className="h-4 w-4" />
                 <span>Testimonials</span>
               </div>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">What Our Clients Say</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                What Our Clients Say
+              </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                Don't just take our word for it. Here's what our clients have to say about working with us.
+                Don't just take our word for it. Here's what our clients have to
+                say about working with us.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-3">
               <TestimonialCard
-                quote="TechNova transformed our business with an app that our customers love. The team was professional, responsive, and delivered beyond our expectations."
+                quote="JJM Solutions transformed our business with an app that our customers love. The team was professional, responsive, and delivered beyond our expectations."
                 author="Jessica Miller"
                 company="HealthTech Inc."
                 image="/placeholder.svg?height=100&width=100"
               />
               <TestimonialCard
-                quote="Working with TechNova was a game-changer for our startup. They understood our vision and built a platform that has helped us scale rapidly."
+                quote="Working with JJM Solutions was a game-changer for our startup. They understood our vision and built a platform that has helped us scale rapidly."
                 author="David Thompson"
                 company="FinEdge"
                 image="/placeholder.svg?height=100&width=100"
               />
               <TestimonialCard
-                quote="The team at TechNova doesn't just build apps, they build relationships. Their strategic approach and technical expertise made all the difference."
+                quote="The team at JJM Solutions doesn't just build apps, they build relationships. Their strategic approach and technical expertise made all the difference."
                 author="Sophia Garcia"
                 company="Retail Connect"
                 image="/placeholder.svg?height=100&width=100"
@@ -423,8 +503,9 @@ export default function Home() {
                   Let's Build Something Amazing Together
                 </h2>
                 <p className="text-gray-400">
-                  Ready to start your next project? Contact us today for a free consultation and let's discuss how we
-                  can help bring your ideas to life.
+                  Ready to start your next project? Contact us today for a free
+                  consultation and let's discuss how we can help bring your
+                  ideas to life.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 bg-dark-100 p-4 rounded-2xl hover:bg-dark-100/80 transition-all hover:-translate-y-1 duration-300">
@@ -464,7 +545,9 @@ export default function Home() {
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                       </svg>
                     </div>
-                    <span className="text-gray-300">hello@technova.com</span>
+                    <span className="text-gray-300">
+                      hello@jjmsolutions.com
+                    </span>
                   </div>
                   <div className="flex items-center gap-3 bg-dark-100 p-4 rounded-2xl hover:bg-dark-100/80 transition-all hover:-translate-y-1 duration-300">
                     <div className="rounded-xl bg-blue-500/20 p-2">
@@ -484,7 +567,9 @@ export default function Home() {
                         <circle cx="12" cy="10" r="3" />
                       </svg>
                     </div>
-                    <span className="text-gray-300">123 Tech Street, San Francisco, CA 94107</span>
+                    <span className="text-gray-300">
+                      123 Tech Street, San Francisco, CA 94107
+                    </span>
                   </div>
                 </div>
               </div>
@@ -503,10 +588,11 @@ export default function Home() {
                 <div className="rounded-xl bg-blue-500 p-2">
                   <Code className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-xl font-bold">TechNova</span>
+                <span className="text-xl font-bold">JJM Solutions</span>
               </div>
               <p className="text-gray-400 mb-4">
-                Building digital experiences that transform businesses and delight users.
+                Building digital experiences that transform businesses and
+                delight users.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -592,30 +678,47 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
+              <h3 className="text-lg font-semibold mb-4 text-white">
+                Services
+              </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Mobile App Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Web App Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     UX/UI Design
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Digital Strategy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Maintenance & Support
                   </Link>
                 </li>
@@ -625,30 +728,46 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4 text-white">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Our Work
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Link
+                    href="#"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white">Subscribe</h3>
-              <p className="text-gray-400 mb-4">Subscribe to our newsletter for the latest news and insights.</p>
+              <h3 className="text-lg font-semibold mb-4 text-white">
+                Subscribe
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Subscribe to our newsletter for the latest news and insights.
+              </p>
               <form className="flex gap-2">
                 <input
                   type="email"
@@ -662,11 +781,12 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-dark-100 mt-12 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} TechNova. All rights reserved.</p>
+            <p>
+              © {new Date().getFullYear()} JJM Solutions. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
